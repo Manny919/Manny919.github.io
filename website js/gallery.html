@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News - BasketBall</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">Basketball</a></h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="hallofframe.html">Hall of Frame</a></li>
+                <li><a class="active" href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="news">
+        <section id="hero">
+            <span id="herocontent">
+                <h1 id="title">Gallery</h1>
+            </span>
+        </section>
+        <div class="container">
+            <section id="gallery_section">
+                <h1 class="section_title">Gallery</h1>
+                <div class="section_content">
+                    <div class="gallery">
+                        <img src="images/gallery/image.png" alt="BasketBall" />
+                    </div>
+                    <div class="gallery">
+                        <img src="images/gallery/image1.jpg" alt="BasketBall" />
+                    </div>
+                    <div class="gallery">
+                        <img src="images/gallery/image2.jpg" alt="BasketBall" />
+                    </div>
+                    <div class="gallery">
+                        <img src="images/gallery/image3.jpg" alt="BasketBall" />
+                    </div>
+                    <div class="gallery">
+                        <img src="images/gallery/image4.jfif" alt="BasketBall" />
+                    </div>
+                    <div class="gallery">
+                        <img src="images/gallery/image5.jfif" alt="BasketBall" />
+                    </div>
+                    <div class="gallery">
+                        <img src="images/gallery/image6.jfif" alt="BasketBall" />
+                    </div>
+                    <div class="gallery">
+                        <img src="images/gallery/image7.avif" alt="BasketBall" />
+                    </div>
+                    <div class="gallery">
+                        <img src="images/gallery/image8.jfif" alt="BasketBall" />
+                    </div>
+                </div>
+            </section>
+            <div id="image_modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage" />
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2023 Basketball. All rights reserved.</p>
+        <span id="day"></span>
+    </footer>
+    <script src="modal.js"></script>
+</body>
+
+</html>

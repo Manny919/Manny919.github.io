@@ -1,0 +1,165 @@
+@font-face {
+    font-family: roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+body{
+    font-family: roboto;
+    margin: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+    background-color: #f0f0f0;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    margin: 0px;
+    padding: 5px 5%;
+}
+header h1 a{
+    text-decoration: none;
+    color: #fff;
+}
+header .navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: start;
+    margin-top: 1.5rem;
+
+}
+header .navigation ul a{
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    
+}
+header .navigation ul a.active{
+    color: #999;
+}
+header .navigation ul a:hover{
+    color: #999;
+}
+#hero{
+    min-height: 70vh;
+    background: url(images/bg_hero.jpg);
+    
+    margin: 0px;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero h1{
+    position: absolute;
+    background-color: rgb(0, 0,0,.5);
+    border-radius: 10px;
+    width: auto;
+    color: #fff;
+    font-style: italic;
+    font-size: 2rem;
+    top: 35%;
+    left: 40%;
+    padding: 10px 15px;
+}
+#hallofframe #hero,#gallery #hero{
+    min-height: 50vh;
+}
+.section_title{
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    
+}
+@media (min-width: 500px) {
+    #players_section .section_content,#rules_section .section_content,#gallery_section .section_content {
+     
+        grid-template-columns: repeat(2,1fr); /* One column per row by default */
+     
+      }
+  }
+@media (min-width: 768px) {
+    #players_section .section_content,#rules_section .section_content,#gallery_section .section_content {
+     
+        grid-template-columns: repeat(3,1fr); /* One column per row by default */
+     
+      }
+  }
+
+ /* Apply styles for smaller screens (default to one column per row) */
+ #players_section .section_content,#rules_section .section_content {
+    display: grid;
+    grid-template-columns: repeat(1fr); /* One column per row by default */
+    gap: 16px; /* Adjust the gap as needed */
+  }
+
+  /* Additional styling for the grid items (replace with your content) */
+  #players_section .section_content .player,#rules_section .section_content .rule{
+    background-color: #ddd;
+    padding: .5rem;
+    
+    text-align: center;
+  }
+  #players_section .section_content .player img{
+    width: 100%;
+    height: auto;
+  }
+  #players_section .section_content .player p{
+    font-size: 1.3rem;
+    padding: 10px;
+    margin: 0px;
+  }
+  #rules_section .section_content .rule p{
+    text-align: justify;
+    margin: 5px 10px;
+  }
+  #rules_section .section_content .rule{
+    border-bottom: 1px solid #000;
+  }
+  #footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0px;
+    margin-top: 3rem;
+  }
+
+  
+ /* Apply styles for smaller screens (default to one column per row) */
+ #gallery_section .section_content {
+    display: grid;
+    grid-template-columns: repeat(1fr); /* One column per row by default */
+    gap: 16px; /* Adjust the gap as needed */
+  }
+
+  /* Additional styling for the grid items (replace with your content) */
+  #gallery_section .section_content .gallery {
+    background-color: #ddd;
+    padding: .2rem;
+    
+    text-align: center;
+  }
+  #gallery_section .section_content .gallery img{
+    width: 100%;
+    height: auto;
+  }
+  
+
+  @media (max-width:786px){
+    #hero{
+        min-height: 40vh;
+    }
+  }
+  @media (max-width: 500px)  {
+    .navigation ul{
+        margin: 0px;
+        padding: 0px;
+    }
+  }

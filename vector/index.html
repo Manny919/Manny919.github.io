@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Vector</title>
+  <style>
+    body {
+      background: radial-gradient(#999, #fff) no-repeat;
+      background-clip: 100%;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    #vector {
+      transition: all 0.3s ease;
+      position: relative;
+      top: 25vh;
+    }
+
+    #vector:hover {
+      transform: scale(1.1);
+    }
+
+    a:hover rect {
+      fill-opacity: 0.5;
+    }
+
+    a:active rect {
+      fill-opacity: 0.8;
+    }
+
+    #vector #initial text:hover {
+      fill: #000;
+    }
+  </style>
+</head>
+
+<body>
+  <svg id="vector" width="300" height="350" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="blue" stop-opacity="0.8"></stop>
+        <stop offset="50%" stop-color="green" stop-opacity="0.8"></stop>
+        <stop offset="100%" stop-color="purple" stop-opacity="0.8"></stop>
+      </linearGradient>
+      <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="red" stop-opacity="0.8"></stop>
+        <stop offset="50%" stop-color="orange" stop-opacity="0.8"></stop>
+        <stop offset="100%" stop-color="pink" stop-opacity="0.8"></stop>
+      </linearGradient>
+      <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="darkblue" stop-opacity="0.8"></stop>
+        <stop offset="50%" stop-color="gold" stop-opacity="0.8"></stop>
+        <stop offset="100%" stop-color="indigo" stop-opacity="0.8"></stop>
+      </linearGradient>
+    </defs>
+    <circle cx="150" cy="150" r="150" fill="url(#gradient2)" />
+    <line x1="45" y1="110" x2="265" y2="110" stroke="#fff" stroke-width="5" />
+    <a xlink:href="https://github.com" target="_blank" id="initial">
+      <text x="40" y="175" font-family="Arial" font-size="75" fill="#fff">
+        Manny
+      </text>
+    </a>
+    <a xlink:href="https://www.nyu.edu/" target="_blank">
+      <rect x="60" y="200" width="180" height="30" fill="#f39c12" fill-opacity="1" />
+      <text x="120" y="225" font-family="Arial" font-size="25" fill="#000">
+        NYU
+      </text>
+    </a>
+  </svg>
+</body>
+
+</html>

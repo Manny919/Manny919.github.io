@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raster Graphics</title>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    .container {
+      position: relative;
+      height: 100vh;
+      background: url("bg.png") center/cover no-repeat;
+    }
+    img {
+      position: fixed;
+      bottom: 0px;
+      right: 550px;
+      /* transform: translateY(-50%); */
+      max-height: 100vh;
+    }
+
+    p {
+      position: absolute;
+      bottom: 10px;
+      right: 500px;
+      background-color: #00000050;
+      color: #fff;
+      padding: 5px;
+      border-radius: 5px;
+      /* transform: translateX(-50%); */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="me_960.png" srcset="
+          me_480.png 480w,
+          me_960.png 960w,
+          me_1440.png 1440w
+        " alt="Your Description" />
+    <p>At the Basketball.</p>
+  </div>
+</body>
+
+</html>
