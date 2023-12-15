@@ -113,6 +113,10 @@ header .navigation ul a:hover{
     object-fit: cover;
     object-position: top;
   }
+  #players_section .section_content .player p small{
+    font-size: 14px;
+    
+}
   #players_section .section_content .player p{
     font-size: 1.3rem;
     padding: 10px;
