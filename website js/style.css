@@ -150,6 +150,7 @@ header .navigation ul a:hover {
 }
 
 #players_section .section_content .player img {
+    width: 100%;
     height: 300px;
     object-fit: cover;
     object-position: top;

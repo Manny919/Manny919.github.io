@@ -1,22 +1,114 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Your name goes here</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            margin-bottom: 2rem;
+        }
+        header h1 {
+            margin: 0px;
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+            padding: 3rem 0px;
+        }
+        @media (min-width: 500px) {
+            #portfolio {
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media (min-width: 768px) {
+            #portfolio {
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+        #portfolio {
+            display: grid;
+            grid-template-columns: repeat(1fr);
+            gap: 16px;
+        }
+        #portfolio .project {
+            background-color: #ddd;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        #portfolio .project a {
+            text-decoration: none;
+            color: #000;
+        }
+        #portfolio .project a:hover {
+            color: #ff2222;
+        }
+        #portfolio .project img {
+            width: 100%;
+            height: auto;
+        }
+        #portfolio .project p {
+            font-size: 1.3rem;
+            padding: 10px;
+            margin: 0px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Introduction to Web Design</h1>
-    <p>Your self introduction goes here</p>
-    <ul>
-        <li><a href="TASK 1/me/index.html">HTML</a></li>
-        <li>CSS</li>
-        <li>Raster Graphics</li>
-        <li>Vector Graphics</li>
-        <li>Website Layout</li>
-        <li>Responsive Design</li>
-        <li>JavaScript</li>
-        <li>Final Project</li>
-    </ul>
+    <header>
+        <h1>Projects List</h1>
+    </header>
+    <main>
+        <section id="portfolio">
+            <div class="project">
+                <a href="unix.html">
+                    <img src="projects_imgs/unix.png" alt="Unix Webpage" />
+                    <p>Unix Webpage</p>
+                </a>
+            </div>
+            <div class="project">
+                <a href="TASK 1/me/index.html">
+                    <img src="projects_imgs/mewithoutcss.png" alt="Me without CSS" />
+                    <p>Me without CSS</p>
+                </a>
+            </div>
+            <div class="project">
+                <a href="TASK 1/me - CSS/index.html">
+                    <img src="projects_imgs/mewithcss.png" alt="Me with CSS" />
+                    <p>Me with CSS</p>
+                </a>
+            </div>
+            <div class="project">
+                <a href="Raster-Graphics/index.html">
+                    <img src="projects_imgs/raster.png" alt="Raster Graphics" />
+                    <p>Raster Graphics</p>
+                </a>
+            </div>
+            <div class="project">
+                <a href="vector/index.html">
+                    <img src="projects_imgs/vector.png" alt="Vector Graphics" />
+                    <p>Vector Graphics</p>
+                </a>
+            </div>
+            <div class="project">
+                <a href="website/index.html">
+                    <img src="projects_imgs/layout.png" alt="Ressponsive Layout" />
+                    <p>Ressponsive Layout</p>
+                </a>
+            </div>
+            <div class="project">
+                <a href="website js/index.html">
+                    <img src="projects_imgs/layoutjs.png" alt="Ressponsive Layout with JS" />
+                    <p>Ressponsive Layout with JS</p>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

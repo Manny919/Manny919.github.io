@@ -6,13 +6,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function changeCSSProperty() {
+        var colors = ["Blue", "Green", "Red", "orange", "Purple"];
         var players = document.getElementsByClassName("player");
         for (var i = 0; i < players.length; i++) {
-            players[i].style.color = 'red'; 
+            
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            players[i].style.color = randomColor; 
         }
         var rules = document.getElementsByClassName("rule");
         for (var i = 0; i < rules.length; i++) {
-            rules[i].style.color = 'red'; 
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            rules[i].style.color = randomColor; 
         }
     }
 
